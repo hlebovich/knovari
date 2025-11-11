@@ -6,17 +6,18 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Knovari"/>
   <Description DefaultValue="A template to get started."/>
-  <IconUrl DefaultValue="https://proud-bush-0ebee4a03.3.azurestaticapps.net/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://proud-bush-0ebee4a03.3.azurestaticapps.net/icon-64.png"/>
+  <IconUrl DefaultValue="https://hlebovich.github.io/knovari/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://hlebovich.github.io/knovari/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://www.knovari.com/help"/>
   <AppDomains>
     <AppDomain>https://www.knovari.com</AppDomain>
+    <AppDomain>https://hlebovich.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Presentation"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://proud-bush-0ebee4a03.3.azurestaticapps.net/taskpane"/>
+    <SourceLocation DefaultValue="https://hlebovich.github.io/knovari/src/taskpane/taskpane.html"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -57,13 +58,13 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://proud-bush-0ebee4a03.3.azurestaticapps.net/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://proud-bush-0ebee4a03.3.azurestaticapps.net/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://proud-bush-0ebee4a03.3.azurestaticapps.net/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://hlebovich.github.io/knovari/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://hlebovich.github.io/knovari/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://hlebovich.github.io/knovari/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://proud-bush-0ebee4a03.3.azurestaticapps.net/commands"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://proud-bush-0ebee4a03.3.azurestaticapps.net/taskpane"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://hlebovich.github.io/knovari/src/commands/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://hlebovich.github.io/knovari/src/taskpane/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="CommandsGroup.Label" DefaultValue="Commands Group"/>
