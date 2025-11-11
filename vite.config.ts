@@ -12,7 +12,6 @@ function routeAliases(): Plugin {
           // req.url can look like "/taskpane.html?x=1"
           const u = new URL(req.url || "/", "https://local.dev"); // base origin only for parsing
           const { pathname, search } = u;
-
           if (pathname === "/taskpane.html" || pathname === "/taskpane") {
             req.url = `/src/taskpane/taskpane.html${search}`;
           } else if (pathname === "/commands.html" || pathname === "/commands") {
@@ -29,7 +28,6 @@ function routeAliases(): Plugin {
 
 export default defineConfig(async () => {
   const isDeploy = process.env.NODE_ENV === "deployment";
-
   const buildOptions = {
     outDir: "dist",
     rollupOptions: {
@@ -44,7 +42,6 @@ export default defineConfig(async () => {
       },
     },
   };
-
   const baseServerOptions = {
     port: 3000,
     strictPort: true,
@@ -52,6 +49,7 @@ export default defineConfig(async () => {
 
   if (isDeploy) {
     return {
+      base: "/knovari/", // Для GitHub Pages (имя репозитория)
       plugins: [react(), routeAliases()],
       server: baseServerOptions,
       preview: baseServerOptions,
@@ -60,6 +58,7 @@ export default defineConfig(async () => {
   } else {
     const httpsOptions = await devCerts.getHttpsServerOptions();
     return {
+      base: "/knovari/", // Для консистентности, можно оставить и для локальной разработки
       plugins: [react(), routeAliases()],
       server: {
         https: httpsOptions,

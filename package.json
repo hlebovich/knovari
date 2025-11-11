@@ -22,7 +22,9 @@
     "stop:local": "office-addin-debugging stop manifest.dev.xml",
     "stop:prod": "office-addin-debugging stop manifest.prod.xml",
     "validate": "office-addin-manifest validate manifest.xml",
-    "generate-manifest": "node scripts/generate-manifest.js"
+    "generate-manifest": "node scripts/generate-manifest.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "prettier": "office-addin-prettier-config",
   "dependencies": {
@@ -49,6 +51,7 @@
     "eslint-plugin-office-addins": "^4.0.3",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "gh-pages": "^6.3.0",
     "globals": "^16.4.0",
     "office-addin-cli": "^2.0.3",
     "office-addin-debugging": "^6.0.3",
