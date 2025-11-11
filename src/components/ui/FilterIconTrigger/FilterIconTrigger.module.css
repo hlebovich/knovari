@@ -1,0 +1,12 @@
+/* FilterIcon styles - based on Figma Filter design */
+.root {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

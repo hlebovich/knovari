@@ -1,0 +1,165 @@
+/* Card styles - based on Figma design */
+.root {
+  background: var(--color-white);
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid var(--color-gray-200);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 16px;
+}
+
+/* Header section */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex-shrink: 1;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: var(--font-family-secondary);
+  font-weight: 500;
+  line-height: 0;
+  text-wrap: nowrap;
+
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.category {
+  font-size: 10px;
+  color: var(--color-text-muted);
+  letter-spacing: -0.07px;
+  text-transform: uppercase;
+  line-height: 1;
+  flex-shrink: 1;
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.initialValue {
+  font-size: 14px;
+  color: var(--color-text-primary);
+  letter-spacing: -0.098px;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.initialValue.resolved {
+  color: var(--color-text-muted);
+}
+
+/* Description */
+.description {
+  font-family: var(--font-family-secondary);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  letter-spacing: -0.084px;
+  line-height: 1.2;
+}
+
+/* Actions section */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-width: 0; /* Allow flex children to shrink */
+}
+
+.actionsLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  min-width: 0; /* Allow this container to shrink */
+  flex: 1; /* Take up available space */
+}
+
+.treatment {
+  flex-shrink: 0; /* Never shrink the dropdown */
+  width: fit-content;
+}
+
+.replaceValue {
+  background: var(--color-gray-300);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 6px;
+  border-radius: 8px;
+  flex-shrink: 1; /* Allow this to shrink */
+  min-width: 0; /* Allow overflow handling */
+  max-width: 140px; /* Slightly increase maximum width */
+  cursor: help; /* Indicate tooltip is available */
+}
+
+.replaceValueText {
+  font-family: var(--font-family-secondary);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  letter-spacing: -0.098px;
+  line-height: 22px;
+  margin: 0;
+  width: 100%;
+}
+
+.replaceValueText.resolved {
+  opacity: 0.5;
+}
+
+.actionsRight {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0; /* Never shrink the action buttons */
+}
+
+/* Apply section */
+.apply {
+  background: var(--color-apply-button-bg);
+  display: flex;
+  align-items: flex-start;
+  border-radius: 8px;
+  flex-shrink: 0;
+  width: fit-content;
+}
+
+.error {
+  color: var(--color-badge-red);
+  font-size: 12px;
+}

@@ -1,0 +1,13 @@
+{
+  "trailingSlash": "auto",
+  "routes": [
+    {
+      "route": "/commands",
+      "rewrite": "/src/commands/commands.html"
+    },
+    {
+      "route": "/taskpane",
+      "rewrite": "/src/taskpane/taskpane.html"
+    }
+  ]
+}

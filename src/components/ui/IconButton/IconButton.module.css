@@ -1,0 +1,65 @@
+/* Base icon button styles - extracted from Accept/Reject Figma designs */
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 0;
+  outline: none;
+}
+
+.root:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+.root.disabled {
+  cursor: default;
+}
+
+/* Color variants */
+.root.default {
+  background-color: var(--color-icon-button-bg-default);
+}
+
+.root.default:hover:not(.disabled) {
+  background-color: var(--color-icon-button-bg-default-hover);
+}
+
+.root.success {
+  background-color: var(--color-icon-button-bg-success);
+}
+
+.root.success:hover:not(.disabled) {
+  background-color: var(--color-icon-button-bg-success-hover);
+}
+
+.root.warning {
+  background-color: var(--color-icon-button-bg-warning);
+}
+
+.root.warning:hover:not(.disabled) {
+  background-color: var(--color-icon-button-bg-warning-hover);
+}
+
+/* Icon container */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 19.091px;
+  height: 19.091px;
+}
+
+/* Icon SVG */
+.icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

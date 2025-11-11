@@ -1,0 +1,26 @@
+.root {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--color-sidebar-border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px
+}
+
+.title {
+  font-family: var(--font-family-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+
+  color: var(--color-text-primary);
+
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 4px;
+  align-items: start;
+}
+
+.checkbox {
+  margin: 0;
+}

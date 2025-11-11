@@ -1,0 +1,30 @@
+/* Base progress bar container - based on ProgressIndicators Figma design */
+.root {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-progress-bg);
+  border-radius: 100px;
+  overflow: hidden;
+  height: 4px;
+  width: 100%;
+}
+
+/* Progress fill - represents completed portion */
+.fill {
+  background-color: var(--color-progress-fill);
+  height: 100%;
+  border-radius: 999px;
+  flex-shrink: 0;
+  transition: width 0.3s ease-in-out;
+  min-width: 0;
+}
+
+/* Track - represents remaining portion (transparent) */
+.track {
+  flex: 1;
+  height: 1px;
+  min-height: 1px;
+  min-width: 1px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
